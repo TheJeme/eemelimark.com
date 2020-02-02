@@ -1,0 +1,284 @@
+<!--
+  Hello!
+  -
+  Simplefolio is a clean and responsive portfolio template for Developers!
+  Created by Jacobo Martinez.
+  -
+  Github Repo: https://github.com/cobidev/simplefolio/
+  Readme: https://github.com/cobidev/simplefolio/README.md
+  -
+  For business & inquires, contact me -> cobimr@protonmail.com
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+
+    <!-- Put here your site title -->
+    <title>JemeDev | Showcase</title>
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], skill" />
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Jeme | Developer" />
+
+    <!-- Required librarys -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
+
+    <!-- Remove this script once you setup your custom portfolio -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
+
+  <!-- Follow the HTML instructions to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <div id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title" class="load-hidden">
+          Hello, I'm <span class="text-color-main">Jeme</span>.
+          <br />
+          I'm Software Developer.
+        </h1>
+        <p class="hero-cta" class="load-hidden">
+          <a class="cta-btn cta-btn--hero" href="#about">View more</a>
+        </p>
+      </div>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">
+          About me
+        </h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img
+                class="img-fluid rounded"
+                height="auto"
+                width="300px"
+                src="./assets/profile.png"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">            
+              <div class="about-wrapper__info-section">
+                <h1 class="about-wrapper__info-text info-title">                  
+                  Skills
+                </h1>
+                <br /><br />                
+                <p class="about-wrapper__info-text">                  
+                  <strong>Languages:</strong> C#, C++, Lua, Python, HTML5, CSS3
+                </p>
+                <p class="about-wrapper__info-text">                  
+                  <strong>Engines / Frameworks:</strong> Unity, Godot, Monogame, XNA, Löve, WPF
+                </p>
+                <p class="about-wrapper__info-text">                  
+                  <strong>Tools:</strong> Git, Github, Atom, VS Code, Aseprite
+                </p>
+                <br />
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">
+            Projects
+          </h2>
+          
+          
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Flakesnow</h3>
+                <div>
+                  <p class="mb-4">
+                    Flakesnow is a desktop app with multiple features for personal use.
+                  </p>
+                  <br />
+                  <br />                  
+                  <p>
+                    Platform: PC [Windows] <br />
+                    Genre: Rhythm <br />
+                    Framework: WPF
+                  </p>
+                </div>
+                <a target="Source" class="cta-btn cta-btn--hero" href="https://github.com/TheJeme/Flakesnow">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/TheJeme/Flakesnow" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/Flakesnow.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Eity</h3>
+                <div>
+                  <p class="mb-4">
+                    Eity is a minimalistic graphics rhythm game that is easy to learn but hard to master.
+                  </p>
+                  <br />
+                  <br />
+                  <p>
+                    Platform: PC [Windows] <br />
+                    Genre: Rhythm <br />
+                    Engine / Framework: Löve
+                  </p>
+                </div>
+                <a target="Source" class="cta-btn cta-btn--hero" href="https://github.com/TheJeme/Eity">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/TheJeme/Eity" target="Source">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/Eity.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Aim++</h3>
+                <div>
+                  <p class="mb-4">
+                    Aim++ is simple 2d aim training game <br /> with a lot of game modifications.
+                  </p>
+                  <br />
+                  <br />                  
+                  <p>
+                    Platform: PC [Windows] <br />
+                    Genre: Rhythm <br />
+                    Engine / Framework: Löve
+                  </p>
+                </div>
+                <a target="Source" class="cta-btn cta-btn--hero" href="https://github.com/TheJeme/Aimplusplus">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/TheJeme/Aimplusplus" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/Aimpp.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Rolrol Spinner</h3>
+                <div>
+                  <p class="mb-4">
+                    Rolrol Spinner is fidget spinner game on mobile where you can unlock unique spinners.
+                  </p>
+                  <br />
+                  <br />                  
+                  <p>
+                    Platform: Mobile [Android] <br />
+                    Genre: Simulation <br />
+                    Engine: Godot Engine
+                  </p>
+                </div>
+                <a target="Source" class="cta-btn cta-btn--hero" href="https://github.com/TheJeme/Rolrol-Spinner">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://github.com/TheJeme/Rolrol-Spinner" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/Spinner.jpg" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->        
+          
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a href="https://twitter.com/TheJemee" target="_blank">
+            <i class="fa fa-twitter fa-inverse"></i>
+          </a>
+          <a href="https://steamcommunity.com/id/thejeme/" target="_blank">
+            <i class="fa fa-steam fa-inverse"></i>
+          </a>
+          <a href="https://github.com/TheJeme" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- If you give me some credit, will be huge for me :) -->
+        <p class="footer__text">
+          © 2020 - Developed by <a href="https://github.com/TheJeme" target="_blank">Jeme</a>
+          </a>
+        </p>
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+  </body>
+</html>
