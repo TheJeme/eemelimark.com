@@ -1,4 +1,4 @@
 # JemeDev-website
-> Noodes is notes app.
+> https://jemedev.netlify.com/.
 
 ![](https://i.imgur.com/Crw2caH.png)
