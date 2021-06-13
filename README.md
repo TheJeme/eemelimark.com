@@ -6,7 +6,7 @@
 ## Skills
 
 * **Languages:** C#, C++, Lua, Python, HTML5, CSS3
-* **Engines/Frameworks:** Unity, Godot, Monogame, Löve, WPF, Xamarin
+* **Engines/Frameworks:** Unity, Godot, Monogame, Löve, WPF, Xamarin, React
 * **Tools:** Git, Github, Atom, VS Code, Aseprite, Blender
 
 ## Projects
