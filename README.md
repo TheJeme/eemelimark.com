@@ -1,3 +1,1 @@
-# JemeDev-website
-
-> https://jemedev.netlify.com/
+# Eemeli Mark Portfolio
