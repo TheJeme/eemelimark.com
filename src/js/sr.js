@@ -23,7 +23,7 @@ export default function() {
   });
   ScrollReveal().reveal('.hero-cta', {
     ...defaultProps,
-    delay: 1000,
+    delay: 800,
     origin: window.innerWidth > 768 ? 'left' : 'bottom'
   });
 
@@ -35,8 +35,8 @@ export default function() {
   });
   ScrollReveal().reveal('.about-wrapper__info', {
     ...defaultProps,
-    delay: 1000,
-    origin: window.innerWidth > 768 ? 'left' : 'bottom'
+    delay: 800,
+    origin: window.innerWidth > 768 ? 'right' : 'bottom'
   });
 
   /* Projects Section */
@@ -47,7 +47,7 @@ export default function() {
   });
   ScrollReveal().reveal('.project-wrapper__image', {
     ...defaultProps,
-    delay: 1000,
+    delay: 800,
     origin: window.innerWidth > 768 ? 'right' : 'bottom'
   });
 
