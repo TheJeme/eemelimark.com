@@ -23,7 +23,7 @@ export default function() {
   });
   ScrollReveal().reveal('.hero-cta', {
     ...defaultProps,
-    delay: 800,
+    delay: 900,
     origin: window.innerWidth > 768 ? 'left' : 'bottom'
   });
 
@@ -31,11 +31,11 @@ export default function() {
   ScrollReveal().reveal('.about-wrapper__image', {
     ...defaultProps,
     delay: 600,
-    origin: 'bottom'
+    origin: window.innerWidth > 768 ? 'left' : 'bottom'
   });
   ScrollReveal().reveal('.about-wrapper__info', {
     ...defaultProps,
-    delay: 800,
+    delay: 900,
     origin: window.innerWidth > 768 ? 'right' : 'bottom'
   });
 
@@ -47,7 +47,7 @@ export default function() {
   });
   ScrollReveal().reveal('.project-wrapper__image', {
     ...defaultProps,
-    delay: 800,
+    delay: 900,
     origin: window.innerWidth > 768 ? 'right' : 'bottom'
   });
 
