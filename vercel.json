@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.eemelimark.com"
+        }
+      ],
+      "destination": "https://eemelimark.com/$1",
+      "permanent": true
+    }
+  ]
+}

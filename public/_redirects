@@ -1,0 +1,6 @@
+# Canonical domain redirects
+https://www.eemelimark.com/* https://eemelimark.com/:splat 301!
+http://eemelimark.com/* https://eemelimark.com/:splat 301!
+
+# Normalize index URL
+/index.html / 301!
