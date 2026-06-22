@@ -10,7 +10,7 @@ export default function() {
   /* Section Title */
   ScrollReveal().reveal('.section-title', {
     ...defaultProps,
-    delay: 100,
+    delay: 150,
     distance: '0px',
     origin: 'bottom'
   });
@@ -42,12 +42,12 @@ export default function() {
   /* Projects Section */
   ScrollReveal().reveal('.project-wrapper__text', {
     ...defaultProps,
-    delay: 100,
+    delay: 150,
     origin: window.innerWidth > 768 ? 'left' : 'bottom'
   });
   ScrollReveal().reveal('.project-wrapper__image', {
     ...defaultProps,
-    delay: 250,
+    delay: 300,
     origin: window.innerWidth > 768 ? 'right' : 'bottom'
   });
 
