@@ -54,7 +54,7 @@ export default function() {
   /* Contact Section */
   ScrollReveal().reveal('.contact-wrapper', {
     ...defaultProps,
-    delay: 200,
+    delay: 300,
     origin: 'bottom'
   });
 }
