@@ -18,6 +18,10 @@
     clip-path: none;
   }
 
+  .info-title {
+    font-weight: bold;
+  }
+
   .about-wrapper {
     @include respond(phone) {
       padding-bottom: 5rem;
