@@ -19,6 +19,7 @@
   }
 
   .info-title {
+    font-size: 2rem;
     font-weight: bold;
   }
 
@@ -64,7 +65,7 @@
         }
 
         &--important {
-          background: darken($secondary-color, 1%);
+          background: $secondary-color;
           display: inline-block;
           font-style: italic;
           padding: 0 0.3rem;

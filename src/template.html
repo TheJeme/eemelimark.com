@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Eemeli Mark" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -10,7 +9,6 @@
     <meta name="theme-color" content="#272341" />
     <meta name="color-scheme" content="light" />
     <meta name="format-detection" content="telephone=no" />
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
     <title>Eemeli Mark</title>
     <meta name="description" content="Explore web, mobile, and game projects by software developer Eemeli Mark." />
     <link rel="canonical" href="https://eemelimark.com/" />
@@ -23,41 +21,42 @@
     <meta property="og:image" content="https://eemelimark.com/og-image.png" />
     <meta property="og:image:secure_url" content="https://eemelimark.com/og-image.png" />
     <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1400" />
-    <meta property="og:image:height" content="1400" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
     <meta property="og:image:alt" content="Eemeli Mark" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="Eemeli Mark" />
     <meta name="twitter:description" content="Explore web, mobile, and game projects by software developer Eemeli Mark." />
     <meta name="twitter:image" content="https://eemelimark.com/og-image.png" />
     <meta name="twitter:image:alt" content="Eemeli Mark" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: false });
-    </script>
+    <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="178994b1-49df-4dc9-a195-c9d000b96304"></script>
 
   </head>
 
   <body>
     <div id="top"></div>
+    <main id="main-content" tabindex="-1">
     <div id="hero" class="jumbotron">
       <div class="container">
-        <h1 class="hero-title" class="load-hidden">
+        <h1 class="hero-title">
           Hello, I'm <span class="text-color-main name">Eemeli Mark</span>.
           <br />
           I'm a Software Developer.
           <br/>
         </h1>
-        <p class="hero-cta" class="load-hidden">
+        <p class="hero-cta">
           <a class="cta-btn cta-btn--hero" href="#about">View more</a>
         </p>
-        <p class="hero-cta" class="load-hidden">
-          <a id="resume-link" class="cta-btn cta-btn--hero" href="#" target="_blank">Resume</a>
+        <p class="hero-cta">
+          <a id="resume-link" class="cta-btn cta-btn--hero" href="#" target="_blank" rel="noopener noreferrer">Resume</a>
         </p>
       </div>
     </div>
@@ -72,9 +71,10 @@
             <div class="about-wrapper__image">
               <img
                 class="img-fluid rounded"
-                height="auto"
-                width="300px"
-                src="./assets/profile.png"
+                width="300"
+                height="300"
+                decoding="async"
+                src="./assets/generated/profile.webp"
                 alt="Profile Avatar"
               />
             </div>
@@ -101,14 +101,14 @@
                 <br />
               </div>
             <div class="social-links">
-              <a href="https://github.com/TheJeme" target="_blank">
-                <i class="fa fa-github fa-inverse"></i>
+              <a href="https://github.com/TheJeme" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <i class="fa fa-github fa-inverse" aria-hidden="true"></i>
               </a>
-              <a href="https://www.linkedin.com/in/eemeli-mark-776614213" target="_blank">
-                <i class="fa fa-linkedin fa-inverse"></i>
+              <a href="https://www.linkedin.com/in/eemeli-mark-776614213" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <i class="fa fa-linkedin fa-inverse" aria-hidden="true"></i>
               </a>
-              <a href="mailto:eemelimark@gmail.com" target="_blank">
-                <i class="fa fa-envelope fa-inverse"></i>
+              <a href="mailto:eemelimark@gmail.com" aria-label="Email Eemeli Mark">
+                <i class="fa fa-envelope fa-inverse" aria-hidden="true"></i>
               </a>
             </div>
             </div>
@@ -143,7 +143,7 @@
               <div class="project-wrapper__image">
                 <a href="https://ailurus.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Ailurus" class="img-fluid" src="./assets/ailurus.png" />
+                    <img alt="Ailurus" class="img-fluid" src="./assets/generated/ailurus.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -169,7 +169,7 @@
               <div class="project-wrapper__image">
                 <a href="https://asuka.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Asuka" class="img-fluid" src="./assets/asuka.png" />
+                    <img alt="Asuka" class="img-fluid" src="./assets/generated/asuka.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -195,7 +195,7 @@
               <div class="project-wrapper__image">
                 <a href="https://fira.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Fira" class="img-fluid" src="./assets/Fira.png" />
+                    <img alt="Fira" class="img-fluid" src="./assets/generated/Fira.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -221,7 +221,7 @@
               <div class="project-wrapper__image">
                 <a href="https://moods.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Moods" class="img-fluid" src="./assets/Moods.png" />
+                    <img alt="Moods" class="img-fluid" src="./assets/generated/Moods.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -247,7 +247,7 @@
               <div class="project-wrapper__image">
                 <a href="https://zenquest.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="ZenQuest" class="img-fluid" src="./assets/zenquest.png" />
+                    <img alt="ZenQuest" class="img-fluid" src="./assets/generated/zenquest.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -273,7 +273,7 @@
               <div class="project-wrapper__image">
                 <a href="https://sumi.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Sumi" class="img-fluid" src="./assets/Sumi.png" />
+                    <img alt="Sumi" class="img-fluid" src="./assets/generated/Sumi.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -299,7 +299,7 @@
               <div class="project-wrapper__image">
                 <a href="https://kupla.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Kupla" class="img-fluid" src="./assets/Kupla.png" />
+                    <img alt="Kupla" class="img-fluid" src="./assets/generated/Kupla.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -325,7 +325,7 @@
               <div class="project-wrapper__image">
                 <a href="https://wafflet.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Wafflet" class="img-fluid" src="./assets/Wafflet.png" />
+                    <img alt="Wafflet" class="img-fluid" src="./assets/generated/Wafflet.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -351,7 +351,7 @@
               <div class="project-wrapper__image">
                 <a href="https://markem.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Markem" class="img-fluid" src="./assets/Markem.png" />
+                    <img alt="Markem" class="img-fluid" src="./assets/generated/Markem.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -377,7 +377,7 @@
               <div class="project-wrapper__image">
                 <a href="https://lmao.fi" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="LMAO" class="img-fluid" src="./assets/LMAO.png" />
+                    <img alt="LMAO" class="img-fluid" src="./assets/generated/LMAO.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -403,7 +403,7 @@
               <div class="project-wrapper__image">
                 <a href="https://respanda.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Respanda" class="img-fluid" src="./assets/Respanda.png" />
+                    <img alt="Respanda" class="img-fluid" src="./assets/generated/Respanda.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -429,7 +429,7 @@
               <div class="project-wrapper__image">
                 <a href="https://euqus.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Euqus" class="img-fluid" src="./assets/euqus.png" />
+                    <img alt="Euqus" class="img-fluid" src="./assets/generated/euqus.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -455,7 +455,7 @@
               <div class="project-wrapper__image">
                 <a href="https://eazyread.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="EazyRead" class="img-fluid" src="./assets/EazyRead.png" />
+                    <img alt="EazyRead" class="img-fluid" src="./assets/generated/EazyRead.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -482,7 +482,7 @@
               <div class="project-wrapper__image">
                 <a href="https://avaan.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Avaan" class="img-fluid" src="./assets/Avaan.png" />
+                    <img alt="Avaan" class="img-fluid" src="./assets/generated/Avaan.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -508,7 +508,7 @@
               <div class="project-wrapper__image">
                 <a href="https://kakkuos.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="KakkuOS" class="img-fluid" src="./assets/kakkuos.png" />
+                    <img alt="KakkuOS" class="img-fluid" src="./assets/generated/kakkuos.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -534,7 +534,7 @@
               <div class="project-wrapper__image">
                 <a href="https://github.com/TheJeme/ShotView" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="ShotView" class="img-fluid" src="./assets/shotview.png" />
+                    <img alt="ShotView" class="img-fluid" src="./assets/generated/shotview.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -560,7 +560,7 @@
               <div class="project-wrapper__image">
                 <a href="https://github.com/TheJeme/MoodPad" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="MoodPad" class="img-fluid" src="./assets/MoodPad.png" />
+                    <img alt="MoodPad" class="img-fluid" src="./assets/generated/MoodPad.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -584,9 +584,9 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="https://jeme.itch.io/Eity" target="Source">
+                <a href="https://jeme.itch.io/Eity" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Eity" class="img-fluid" src="./assets/Eity.png" />
+                    <img alt="Eity" class="img-fluid" src="./assets/generated/Eity.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -610,9 +610,9 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="https://jeme.itch.io/upo" target="View">
+                <a href="https://jeme.itch.io/upo" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="upo" class="img-fluid" src="./assets/upo.png" />
+                    <img alt="upo" class="img-fluid" src="./assets/generated/upo.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -636,9 +636,9 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="https://jeme.itch.io/2003" target="Source">
+                <a href="https://jeme.itch.io/2003" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="2003" class="img-fluid" src="./assets/2003.png" />
+                    <img alt="2003" class="img-fluid" src="./assets/generated/2003.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -662,9 +662,9 @@
             </div>
             <div class="col-lg-8 col-sm-12">
               <div class="project-wrapper__image">
-                <a href="https://jeme.itch.io/dodge-the-beat" target="Source">
+                <a href="https://jeme.itch.io/dodge-the-beat" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Dodge The Beat" class="img-fluid" src="./assets/Dodge_The_Beat.png" />
+                    <img alt="Dodge The Beat" class="img-fluid" src="./assets/generated/Dodge_The_Beat.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -690,7 +690,7 @@
               <div class="project-wrapper__image">
                 <a href="https://foxel.jeme.app" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img alt="Foxel" class="img-fluid" src="./assets/Foxel.png" />
+                    <img alt="Foxel" class="img-fluid" src="./assets/generated/Foxel.webp" loading="lazy" decoding="async" />
                   </div>
                 </a>
               </div>
@@ -700,6 +700,7 @@
         </div>
       </div>
     </section>
+    </main>
 
     <footer class="footer navbar-static-bottom">
       <div class="container">
@@ -707,14 +708,14 @@
           <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
         </a>
         <div class="social-links">
-          <a href="https://github.com/TheJeme" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
+          <a href="https://github.com/TheJeme" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+            <i class="fa fa-github fa-inverse" aria-hidden="true"></i>
           </a>
-          <a href="https://www.linkedin.com/in/eemeli-mark-776614213" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
+          <a href="https://www.linkedin.com/in/eemeli-mark-776614213" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+            <i class="fa fa-linkedin fa-inverse" aria-hidden="true"></i>
           </a>
-          <a href="mailto:eemelimark@gmail.com" target="_blank">
-            <i class="fa fa-envelope fa-inverse"></i>
+          <a href="mailto:eemelimark@gmail.com" aria-label="Email Eemeli Mark">
+            <i class="fa fa-envelope fa-inverse" aria-hidden="true"></i>
           </a>
         </div>
 

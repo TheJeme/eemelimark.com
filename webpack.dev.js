@@ -1,18 +1,26 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const path = require('path');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = merge(common, {
   mode: 'development',
+  devServer: {
+    static: path.resolve(__dirname, 'public')
+  },
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    clean: true
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/template.html',
-      favicon: './src/assets/favicon.png'
+      favicon: './public/favicon.png'
+    }),
+    new MiniCssExtractPlugin({
+      filename: '[name].css'
     })
   ],
   module: {
@@ -20,10 +28,17 @@ module.exports = merge(common, {
       {
         test: /\.scss$/,
         use: [
-          'style-loader', //3. Inject styles into DOM
-          'css-loader', //2. Turns css into commonjs
-          'sass-loader'
-        ] //1. Turns sass into css
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                silenceDeprecations: ['import']
+              }
+            }
+          }
+        ]
       }
     ]
   }

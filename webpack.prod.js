@@ -1,37 +1,38 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const common = require('./webpack.common');
-const merge = require('webpack-merge');
+const { merge } = require('webpack-merge');
 const path = require('path');
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = merge(common, {
   mode: 'production',
+  performance: {
+    assetFilter: filename => !filename.endsWith('.pdf')
+  },
   output: {
-    filename: '[name].[contentHash].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: '[name].[contenthash].bundle.js',
+    path: path.resolve(__dirname, 'dist'),
+    clean: true
   },
   optimization: {
     minimizer: [
-      new OptimizeCssAssetsPlugin(),
-      new TerserPlugin(),
-      new HtmlWebpackPlugin({
-        template: './src/template.html',
-        favicon: './src/assets/favicon.png',
-        minify: {
-          removeAttributeQuotes: true,
-          collapseWhitespace: true,
-          removeComments: true
-        }
-      })
+      '...',
+      new CssMinimizerPlugin()
     ]
   },
   plugins: [
-    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin({
+      template: './src/template.html',
+      favicon: './public/favicon.png',
+      minify: {
+        removeRedundantAttributes: true,
+        collapseWhitespace: true,
+        removeComments: true
+      }
+    }),
     new MiniCssExtractPlugin({
-      filename: '[name].[contentHash].css'
+      filename: '[name].[contenthash].css'
     })
   ],
   module: {
@@ -39,10 +40,17 @@ module.exports = merge(common, {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader, //3. Extract css into files
-          'css-loader', //2. Turns css into commonjs
-          'sass-loader'
-        ] //1. Turns sass into css
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                silenceDeprecations: ['import']
+              }
+            }
+          }
+        ]
       }
     ]
   }
