@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "prestart": "node scripts/optimize-images.js",
     "start": "webpack serve --config webpack.dev.js --open",
