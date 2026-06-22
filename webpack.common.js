@@ -12,6 +12,10 @@ module.exports = {
         generator: {
           filename: 'assets/[name].[contenthash][ext]'
         }
+      },
+      {
+        test: /\.woff2$/,
+        type: 'asset/inline'
       }
     ]
   }

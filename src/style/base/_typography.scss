@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: block;
+  font-weight: 400;
+  src: url('~@fontsource/montserrat/files/montserrat-latin-400-normal.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-display: block;
+  font-weight: 700;
+  src: url('~@fontsource/montserrat/files/montserrat-latin-700-normal.woff2') format('woff2');
+}
+
 h1 {
   font-weight: 700;
 }

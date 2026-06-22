@@ -44,6 +44,7 @@
   a {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: $white-color;
     font-size: 3rem;
@@ -58,8 +59,14 @@
   }
 }
 
-.back-to-top i {
-  color: $white-color;
+.social-icon {
+  width: 3rem;
+  height: 3rem;
+}
+
+.back-to-top__icon {
+  width: 2.4rem;
+  height: 2.4rem;
   margin: 1rem 0 $default-font-size;
   transition: all 0.2s ease-in;
 
