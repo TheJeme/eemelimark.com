@@ -88,15 +88,6 @@
         text-align: left;
         line-height: 1.8;
 
-        @include respond(tab-port) {
-          font-size: 1.5rem;
-          text-align: center;
-        }
-        @include respond(phone) {
-          font-size: 1.6rem;
-          text-align: center;
-        }
-
         &--important {
           background: $secondary-color;
           display: inline-block;
